@@ -35,3 +35,5 @@ The front end is quite straight forward. There is a next app, which uses Tailwin
 I could have certainly taken more time to further poslih th UI. Adding a login/sign up feature would have be good for authorization. 
 
 Also, I feel like I could have added some routes, where the inputs would have been more fine tuned for asking more niche questions (related just to people, companies etc)
+
+More importanly, pagination could also have been added, but all these changes would also need changes to be done on the backend itself.
