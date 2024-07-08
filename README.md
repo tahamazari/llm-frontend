@@ -1,3 +1,8 @@
+
+# React Front End
+
+This front-end caters to the need for having a UI component for connecting to the backend ai application.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,24 +18,20 @@ pnpm dev
 # or
 bun dev
 ```
+## Key Functionalities
+1. Communicate with backend service
+2. Users can use the input field for writing down their natural language (in order to search the database)
+3. User can reset all the fields to restore the default state
+4. App also has a prompt shown to the user if nothing is searched already.
+5. Will show a warning to the user if unrelated question is asked by them.
+6. Will throw an error to the user the backend sends an error while fetching relavent data
+## Screenshots
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Project Screenshot](images/sample_question.png)
+![Project Screenshot](images/irrelavent_question.png)
+## Key Challenges
+The front end is quite straight forward. There is a next app, which uses Tailwind for styling. Moreover, I also have made my own custom components (like, Input, Button, Table) in order to help speed development and as it is a good practise to write reusable code.
+## Suggested Improvements
+I could have certainly taken more time to further poslih th UI. Adding a login/sign up feature would have be good for authorization. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Also, I feel like I could have added some routes, where the inputs would have been more fine tuned for asking more niche questions (related just to people, companies etc)
